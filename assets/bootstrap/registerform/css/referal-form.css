@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#E4E4E4;}
+#ref-form{ padding:20px; background:#fff;}
+.login-box{ background:#EEE; padding:20px; border-radius:5px; margin-top:20px; border: 1px solid #ddd; border-bottom: 4px solid #cacaca;}
+.login-box h4{ margin-bottom:20px; font-size:20px;}

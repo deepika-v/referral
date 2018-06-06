@@ -1,0 +1,60 @@
+.body{
+    min-height: 1024px;
+}
+.help-block{
+  color: red;
+}
+.required{
+ color: red;   
+}
+.linkcss{
+	color:#00F;
+	text-decoration: underline;
+}
+.content-wrapper{
+    height: 800px;
+}
+
+.flash-messages {
+ -moz-animation: cssAnimation 0s ease-in 8s forwards;
+ /* Firefox */
+-webkit-animation: cssAnimation 0s ease-in 8s forwards;
+/* Safari and Chrome */
+-o-animation: cssAnimation 0s ease-in 8s forwards;
+ /* Opera */
+ animation: cssAnimation 0s ease-in 8s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        opacity:0;
+    }
+}
+
+#classdata {
+width: 40%;
+height: 20%;
+top: 50%;
+left: 30%;
+position: fixed;
+display: block;
+opacity: 0.7;
+background-color: #fff;
+z-index: 99;
+text-align: center;
+}
+
+#classdata-image {
+position: absolute;
+top: 10%;
+left: 10%;
+z-index: 100;
+}
+
+ 

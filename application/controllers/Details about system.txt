@@ -1,0 +1,445 @@
+Controllers:-
+
+Login Controller:-
+
+1)Index function:-
+     Input Parameter:- 
+                Universityid
+     Output Parameter:- 
+               if validation fails:- Register_view
+               if user is registered but OTP is not verified :- Login page
+               if user has not referred to any friend:- Referfriend page
+               if user has referred friends:- Track Progress page
+     Model function Used:- 
+               find_university,
+               select_city,
+               get_user,
+               get_referralcount.
+     Views Used:-
+     Register_view
+     External Helper Used(if any):-
+      facebook_helper,
+     External Libraries Used(if any):- -
+
+2)forgotpassword function:-
+      Input Parameter:-
+              Universityid
+     Output Parameter:- 
+              Loads forgot_password_view
+     Model function Used:- -
+     Views Used:- forgot_password_view
+     External Helper Used(if any):- -
+     External Libraries Used(if any):-  -
+
+3)doforget function:-
+      Input Parameter:-
+             Universityid
+     Output Parameter:- 
+            if validation false Loads forgot_password_view
+            if user does not exit  Loads forgot_password_view
+            if user exits  Loads forgot_password_view also sends mail to user with reset password link.
+     Model function Used:-
+                 get_userdetails,
+                 update_password
+     Views Used:- forgot_password_view
+     External Helper Used(if any):-
+            string,
+            mail,
+     External Libraries Used(if any):-
+     External Files used if any:-
+         Template for forgot password- forgot_password.html 
+4)changepassword function:- 
+     Input Parameter:-
+                 emailid,
+                 universityid,
+                 mobileno
+     Output Parameter:- Loads changepassword_view
+     Model function Used:- -
+     Views Used:- changepassword_view
+     External Helper Used(if any):-
+     External Libraries Used(if any):- -
+5)resetpassword function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+6)updatepassword function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+7)reset_password function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+8)upload function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+9)do_upload function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+10)logout function:-
+      Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Registration Controller:-
+1)Index function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)add_member function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+
+Registration_support Controller:-
+1)verify_otp function:-
+      Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)check_otp function:-
+    Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+3)resendotp function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+
+Dashboard Controller:-
+1) index function
+    Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+About Controller:-
+1)index function:-
+  Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Faceboolcallback controller:-
+1)index function:-
+      Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)displaylogin function:-
+   Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+3)loginuser function:-
+   Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+4)registeruser function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+5)redirectuser function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+6)login function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Invitation Controller:-
+1)accept function:-
+      Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)accept_invitation function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Inviteusers controller:-
+1) Index function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)curl_file_get_contents function:-
+       Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Progress controller:-
+1) track function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Progress_support controller:-
+1)hidecontact function:-
+    Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)showcontact function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-  
+3)sendreminder function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+4)sendrequest function:-
+    Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+5) request function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+6)claim_request function:-
+      Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Referfriend controller:-
+1)index function:-
+    Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)view function:-
+       Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+3)add function:-
+      Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Welcome controller:-
+1)index function:-
+Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+Helpers:-
+facebook_helper
+1)authurl function
+   Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)getdata function
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+mail_helper
+1)sendemail function
+      Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+referralcode_helper
+1)referralcode function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)generate_otp function:-
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+shorturl_helper
+1)shorten_url function
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+sms_helper
+1)sendsms function
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+2)send_transactional_sms function
+     Input Parameter:-
+     Output Parameter:-
+     Model function Used:-
+     Views Used:-
+     External Helper Used(if any):-
+     External Libraries Used(if any):-
+
+
+Models
+
+Loginmodel
+
+1)getuser function
+
+2)getreferral_count function
+3)get_universityname function
+4)get_userdetails function
+5)select_city function
+6)add_new_member function
+7)find_university function
+8)updatephoto function
+9)get_userid function
+10)get_details function
+11)update_facebookid function
+12)registerfacebookuser function
+
+Referalmodel
+1)get_enquiryid function
+2)add_to_ref_referals function
+3)find_referal_status function
+4)Send_request function
+5)hide_contact function
+6)show_contact function
+7)get_claimuserdetails function
+8)get_redeemamount function
+9)get_approvedamount function
+10)get_totalamount function
+
+Views 
+
+Header_view
+Login_view
+Register_view
+aboutus_view
+associateuser_view
+changepassword_view
+forgot_password_view
+invitation_view
+progress_view
+refer_view
+resetpassword_view
+upload_view
+varify_otp_view
+welcome
+
+
+
+
+
+
+Cron Jobs
+cron.php
